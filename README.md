@@ -69,9 +69,9 @@ Docker version 20.10.16, build aa7e414
   For more details on CLI configuration check here [AWS CLI Config](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-precedence)
   ```
   $ aws configure
-  $ aws configure set region us-west-1 --profile invoiceuser
+  $ aws configure set region us-west-1 --profile invoiceusermicro
   $ aws configure list-profiles
-  $ setx AWS_PROFILE invoiceuser
+  $ setx AWS_PROFILE invoiceusermicro
   ```
   
 - **Step 3:** Run Docker Commands 
@@ -81,6 +81,12 @@ Docker version 20.10.16, build aa7e414
   $ docker build -t invoiceapp .
   $ docker tag invoiceapp:latest public.ecr.aws/<id>/invoiceapp:latest
   $ docker push public.ecr.aws/<id>/invoiceapp:latest
+  $ docker build -t pendingapp .
+  $ docker tag pendingapp:latest public.ecr.aws/<id>/pendingapp:latest
+  $ docker push public.ecr.aws/<id>/pendingapp:latest
+  $ docker build -t processapp .
+  $ docker tag processapp:latest public.ecr.aws/<id>/processapp:latest
+  $ docker push public.ecr.aws/<id>/processapp:latest
   ``` 
  
 
