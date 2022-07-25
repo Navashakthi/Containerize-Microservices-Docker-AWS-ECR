@@ -8,7 +8,7 @@ Microservices are an approach to application development in which a large applic
 It is an architecture where the software components are independent and loosely coupled.
 
 ## Project Use-Case
-Invoice-Info-APP is an application built to get invoice data such as
+InvoiceMicroApp is an application built to get invoice data such as
 -- Total invoices of the month
 -- Invoices Pending payment
 -- Invoices with payment processed
@@ -29,11 +29,9 @@ Install all requirements, create an AWS account ( a free tier account is suffici
 
 ## Project Structure:
 The python flask App files and dependents are present in this folder structure
-- data : Folder contains JSON file with invoice data
-- app.py : Flask app to get invoice data
-- requirements.txt
-- Dockerfile
-- .dockerignore
+- invoice : Folder contains JSON file with invoice list data, python app, Dockerfile, requirements.txt, dockerignore file
+- pending : Folder contains JSON file with invoice pending data, python app, Dockerfile, requirements.txt, dockerignore file
+- processed : Folder contains JSON file with invoice paid data, python app, Dockerfile, requirements.txt, dockerignore file
 
 ## Configure and Containerize the Application in Local Machine
 - Check if docker is successfully installed in the system with : docker --version : Docker version 20.10.16, build aa7e414
