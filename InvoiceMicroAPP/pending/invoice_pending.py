@@ -5,7 +5,7 @@ import json
 
 app = Flask(__name__)
 
-pendingfile = "database/invoice_pending.json"
+pendingfile = "invoice_pending.json"
 with open(pendingfile, "r") as f:
     pending = json.load(f)
 
