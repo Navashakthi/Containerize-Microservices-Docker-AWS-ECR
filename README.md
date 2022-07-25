@@ -36,11 +36,16 @@ The python flask App files and dependents are present in this folder structure
 ## Configure and Containerize the Application in Local Machine
 - Check if docker is successfully installed in the system with : docker --version : Docker version 20.10.16, build aa7e414
 - Download the code from GitHub repository to your local environment
-- In the Invoice-Info-APP directory run the following commands:
-  - docker build -t invoiceapp
-  - docker run -p 5000:5000 invoiceapp
+- In Monolithic application, a single app runs with all 3 services of invoice, pending and processed, here we will create 3 different app for the services.
+- In the InvoiceMicroAPP directory navigate to each service and run the following commands:
+  - ./invoice$ docker build -t invoiceapp
+  - ./invoice$ docker run -p 5001:5001 invoiceapp
+  - ./pending$ docker build -t pendingapp
+  - ./pending$ docker run -p 5002:5002 pendingapp
+  - ./process$ docker build -t processapp
+  - ./process$ docker run -p 5003:5003 processapp
  
- This creates the docker build and run in the local machine.
+ This creates the 3 docker build and run in the local machine where each service is a unique image and runs in a different container.
 
 ## Configure and Containerize the Application in AWS
 - **Step 1:** Open AWS Account with User account
