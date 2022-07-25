@@ -5,7 +5,7 @@ import json
 
 app = Flask(__name__)
 
-paidfile = "database/invoice_paid.json"
+paidfile = "invoice_paid.json"
 with open(paidfile, "r") as f:
     processed = json.load(f)
 
