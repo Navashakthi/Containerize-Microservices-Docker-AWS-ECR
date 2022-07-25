@@ -1,0 +1,34 @@
+{
+    "chris_steve": {
+      "Invoice_Number":"1023_ALPHA_03-07-2022",
+      "Invoice_Date" : "July-03-2022"
+  
+    },
+    "monica_bing": {
+      "Invoice_Number": [ "214_JPHTO_02-07-2022",
+      "215_JPHTO_03-07-2022" ],
+      "Invoice_Date" : "July-20-2022"
+    },
+    "chandler": { 
+      "Invoice_Number": [ "1025_BeTA_02-07-2022",
+      "1027_BeTA_02-07-2022" ],
+      "Invoice_Date" : "July-02-2022"
+    },
+    "Rachel": {
+      "Invoice_Number": [ "1402_PRSTECH_02-07-2022",
+      "1405_PRSTECH_02-07-2022" ],
+      "Invoice_Date" : "July-12-2022"
+    },
+    "Janice": {
+      "Invoice_Number": [ "4128_HwaTECH_12-07-2022",
+      "4129_HwaTECH_12-07-2022" ],
+      "Invoice_Date" : "July-20-2022"
+    },
+    "Jhon": {
+        "Invoice_Number": [ "4128_HwaTECH_08-07-2022",
+        "4129_HwaTECH_18-07-2022" ],
+        "Invoice_Date" : "July-21-2022"
+      }
+
+
+  }
