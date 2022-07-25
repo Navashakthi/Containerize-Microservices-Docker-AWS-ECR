@@ -4,7 +4,7 @@ from werkzeug.exceptions import NotFound
 
 app = Flask(__name__)
 
-invoicefile = "database/invoice.json"
+invoicefile = "invoice.json"
 with open(invoicefile, "r") as f:
     invoices = json.load(f)
 
